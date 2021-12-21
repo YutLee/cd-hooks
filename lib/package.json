@@ -1,19 +1,20 @@
 {
   "name": "cd-hooks",
-  "version": "0.0.1-beta.5",
+  "version": "0.0.1-beta.7",
   "description": "Some react hooks",
   "keywords": [
     "hooks",
     "react",
     "react-hooks"
   ],
-  "files": ["dist"],
-  "main": "./dist/cd-hooks.umd.js",
-  "module": "./dist/cd-hooks.es.js",
+  "files": ["src"],
+  "main": "./src/index.umd.js",
+  "module": "./src/index.es.js",
+  "types": "./src/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/cd-hooks.es.js",
-      "require": "./dist/cd-hooks.umd.js"
+      "import": "./src/index.es.js",
+      "require": "./src/index.umd.js"
     }
   },
   "repository": "https://github.com/YutLee/cd-hooks.git",

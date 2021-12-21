@@ -1,8 +1,8 @@
 import './app.css'
-import UseMountDemo from './hooks/use-mount/demo/demo1'
-import UseUnmountDemo from './hooks/use-unmount/demo/demo1'
-import UseMountEffectDemo from './hooks/use-mount-effect/demo/demo1'
-import UseFetchDemo from './hooks/use-fetch/demo/demo1'
+import UseMountDemo from './use-mount/demo/demo1'
+import UseUnmountDemo from './use-unmount/demo/demo1'
+import UseMountEffectDemo from './use-mount-effect/demo/demo1'
+import UseFetchDemo from './use-fetch/demo/demo1'
 
 function App() {
   return (

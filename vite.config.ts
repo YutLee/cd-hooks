@@ -4,13 +4,15 @@ import dts from 'vite-plugin-dts'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), dts()],
+  plugins: [react(), dts({
+    outputDir: 'lib'
+  })],
   build: {
     lib: {
-      entry: './src/hooks/index.ts',
+      entry: './src/index.ts',
       name: 'cd-hooks',
       // formats: ['es'],
-      fileName: (format) => `cd-hooks.${format}.js`
+      fileName: (format) => `index.${format}.js`
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
@@ -22,6 +24,6 @@ export default defineConfig({
         }
       }
     },
-    outDir: 'lib/dist'
+    outDir: 'lib/src'
   }
 })
