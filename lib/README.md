@@ -52,3 +52,11 @@ const {
   }
 )
 ```
+
+## useScroll
+```
+useScroll(document, (position) => {
+  console.log(position)
+  return true
+})
+```
